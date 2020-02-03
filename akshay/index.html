@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HOME</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./home.css">
+  <link rel="shortcut icon" type="image/png" href="./my-favicon.png"/>
+  <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+</head>
+
+
+<body>
+<!-- <audio autoplay="true" src="./audio.mp3Z  "> -->
+  <div class="topnav" id="myTopnav">
+    <a href="#">Home</a>
+    <a href="./slideshow.html">Childhood</a>
+    <a href="./contact.html">Contact/Feedback</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  <div class="header">
+    <span><pre>You've reached my home page.         Congrats.</pre></span>
+  </div>
+
+  <div class="row">
+
+    <div class="col-3 col-m-3 menu">
+      <ul class="achievements">
+        <li><a href="#food">The food I love..</a></li>
+        <li><a href="slideshow.html">The childhood I miss..</a></li>
+        <li><a href="contact.html">The contact you need..</a></li>
+      </ul>
+    </div>
+
+    <div class="col-6 col-m-9">
+      <h1 class="intro">Introduction</h1>
+      <p>Hello. I am Akshay Kharbanda, an 18 year old boy, who was born and raised up in New Delhi, and I'm currently pursuing my B.Tech from IIIT Hyderabad in Computer Science and Engineering.</p>
+      <br>
+      <h2 class="achieve">My Achievements..</h2>
+      <ul>
+        <li>Got AIR 894 in JEE Mains 2017</li>
+        <li>Got AIR 734 in KVPY SX 2017</li>
+        <li>Got AIR 2728 in JEE Advanced 2017</li>
+        <li>Got AIR 32 in NCFE-NFLAT(National Financial Literacy Test)</li>
+        <li>Was part of the winning team of various zonals, inter-zonals, and All-Open Basketball Tournaments</li>
+        <li>Got 2250/2400 in SAT 2015</li>
+        <li>Got 96.2% in CBSE Boards 2017</li>
+        <li>Won many medals and trophies in skating and swimming</li>
+        <li>And many more..</li>
+      </ul>
+    </div>
+
+
+
+    <div class="col-3 col-m-12">
+      <div class="aside">
+        <h2>About me...</h2>
+        <img src="./akshay2.jpg" class="my-pic" alt="Akshay-hot">
+        <p>I’m shy, please come say hi.</p>
+        <h2>Where?</h2>
+        <a href="https://www.google.co.in/maps/place/Bakul+Nivas/@17.4480215,78.3483768,15z/data=!4m5!3m4!1s0x0:0xda3e609fd9666245!8m2!3d17.4480215!4d78.3483768" target="_blank"><img src="./location.png" class="my-location" alt="Bakul Nivas, IIIT-Hyderabad"></a>
+        <h2>How to reach me?</h2>
+        <p>You can reach Rajiv Gandhi Int'l Airport from all over India and rest of the world.</p>
+      </div>
+    </div>
+
+  </div>
+  <br><br>
+  <div class="foodd">
+    <a id="food"><span class="food-heading">Food is life<i class="em em-purple_heart"></i><i class="em em-blue_heart"></i></span></a>
+    <article class="food-subheading">
+      <h3>Ways to my heart:</h3>
+      <ol>
+        <li>Buy me food.</li>
+        <li>Make me food.</li>
+        <li>Be food.</li>
+      </ol>
+      Because food is an important part of a balanced diet..<br><br>
+      Some of my favouite dishes are:<br><br>
+    </article>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="grilled-chicken.jpg">
+        <img src="./grilled-chicken.jpg" alt="Grilled Chicken" width="600" height="400">
+      </a>
+      <div class="desc">Grilled chicken </div>
+    </div>
+  </div>
+
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="chole-bhature.jpg">
+        <img src="./chole-bhature.jpg" alt="Chole Bhature" width="600" height="400">
+      </a>
+      <div class="desc">Chole Bhature</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="fish_fry.jpg">
+        <img src="fish_fry.jpg" alt="Fish fry" width="600" height="400">
+      </a>
+      <div class="desc">Fish Fry</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="mutton-seekh-kabab.jpg">
+        <img src="mutton-seekh-kabab.jpg" alt="Mutton Seekh-kabab" width="600" height="400">
+      </a>
+      <div class="desc">Mutton Seekh Kababs</div>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <div class="gototop" style="padding:6px;">
+    <a href="#myTopnav"><p>To know more about me apart from the food I like, click here to go to the top and follow the links given in the navigation bar..</p></a>
+  </div>
+
+  <div class="footer">
+    <p>&copy;AkshayKharbanda Inc. 2017</p>
+  </div>
+
+  <script type="text/javascript"> 
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+  }
+  </script>
+
+</body>
+</html>
