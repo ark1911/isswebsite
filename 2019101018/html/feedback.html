@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/mystyle.css">
+</head>
+
+<body>
+  <ul class="topnav">
+    <li onmouseover="mb(this)" onmouseout="mn(this)"><a href="index.html">Home</a></li>
+    <li class="right" onmouseover="mb(this)" onmouseout="mn(this)"><a href="contact.html">Contact me</a></li>
+    <li class="right"><a class="active" href="#feedback">Feedback</a></li>
+  </ul>
+
+  <div style="padding:0 0px;">
+    <p id="feedback">Give your Feedback</p>
+    <script src="../js/fb.js"></script>
+
+    <div class="forms">
+      <form name="myform" action="" method="GET">
+        <input type="text" id="fname" name="name" placeholder="Name">
+        <input type="text" id="lname" name="skill" placeholder="Skill">
+        <input type="text" id="idcomment" name="comment" placeholder="Comment">
+        
+        <select id="country" name="level">
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="expert">Expert</option>
+        </select>
+
+            
+        <input class="subbut" type="submit" value="Submit" onClick="appendtotabla(this.form.name.value,this.form.skill.value,this.form.level.value,this.form.comment.value); return false;">
+      </form>
+    </div>
+    
+    <br><br>
+    
+    <div id="skilltable">
+      <table id ="tabla" class="tablaclass">
+      
+      </table>
+    </div>
+    
+    <script>
+      appendtotabla("Name","Skill","Level","Comment");
+    </script>
+    
+    <br><br><br><br>
+           
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>    
+  </div>
+  
+</body>
+</html>
